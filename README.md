@@ -11,3 +11,5 @@ The collected data by this enhanced setting can be downloaded at [here](https://
 The explortary data includes identified results of censorship activities for the paths from one vantage points to each of multiple backend control servers.
 
 ### Analysis Code
+
+The analysis scripts aim to identify the inconsistency experiened by different paths toward different backend control servers from one vantage point.
