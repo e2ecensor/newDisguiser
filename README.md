@@ -6,6 +6,8 @@ The newDisguiser deploys multiple geo-distributed backend control servers. As su
 
 The collected data by this enhanced setting can be downloaded at [here](https://drive.google.com/drive/folders/1vZ7JuQsWQYIKkT8hxX-_qRldjnSuykQy).
 
-### Results
+### Data
 
-To be updated
+The explortary data includes identified results of censorship activities for the paths from one vantage points to each of multiple backend control servers.
+
+### Analysis Code
