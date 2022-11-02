@@ -2,7 +2,8 @@
 
 The newDisguiser is an extensive measurement build atop of [Disguiser](https://github.com/e2ecensor/Disguiser_public), an end-to-end, ground truth based framework for measuring Internet censorship.
 
-The newDisguiser deploys multiple geo-distributed backend control servers. As such, within a country, the packets that carry the same test domain but with different destination IPs may be forced to traverse different border networks to identify the censorship activity on each path for one vantage point, thereby quantifying the censorship diversity caused by the different paths and ISP networks in one country.
+
+To conduct the new experiments, the [Disguiser](https://github.com/e2ecensor/Disguiser_public) is deployed and tested with multiple geo-distributed backend control servers. As such, within a country, the packets that carry the same test domain but with different destination IPs may be forced to traverse different border networks to identify the censorship activity on each path for one vantage point, thereby quantifying the censorship diversity caused by the different paths and ISP networks in one country.
 
 ### Data
 
