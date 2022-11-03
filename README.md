@@ -7,7 +7,8 @@ To conduct the new experiments, the [Disguiser](https://github.com/e2ecensor/Dis
 
 ### Data
 
-The explortary data includes identified results of censorship activities for the paths from one vantage points to each of multiple backend control servers. The collected raw data by this enhanced setting can be downloaded at [here](https://drive.google.com/drive/folders/1vZ7JuQsWQYIKkT8hxX-_qRldjnSuykQy).
+- The explortary data includes identified results of censorship activities for the paths from one vantage points to each of multiple backend control servers. The *proxy* field specifies detailed information of vantage points who perform the tests (from ProxyRack's platform), including country, geolocation, ISP/ASN, etc. Each item also specifies the test domain and corresponding responses that are retrived from diverse destinations and thus routing pathes.
+- The collected raw data by this enhanced setting can be downloaded at [here](https://drive.google.com/drive/folders/1vZ7JuQsWQYIKkT8hxX-_qRldjnSuykQy). The raw data is also processed data, but only with collected responses (e.g., static payload or manipulated responses) without the identification of censorship activities/types.
 
 
 ### Analysis Code
