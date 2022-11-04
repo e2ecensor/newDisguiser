@@ -5,11 +5,11 @@ from bs4 import BeautifulSoup
 
 
 
-url_list = ["18.133.196.172", "54.197.194.180", "18.228.203.42", "50.18.245.54", "157.175.188.96", "13.244.77.102"]
+url_list = ["", "", "", "", "", ""]
 correct_http_page = 'http\n'
 
 
-with open('/Volumes/Macintosh/Users/crystal/disguiser/code/2022-06-14_http_proxyrack_censorship_attempt2.json', 'r') as f:
+with open('', 'r') as f:
     line = f.readline()
     country_count = {}
     suspicious_vps = {}
@@ -40,7 +40,7 @@ with open('/Volumes/Macintosh/Users/crystal/disguiser/code/2022-06-14_http_proxy
         #             else:
         #                 data['domain'][domain][url] = "detect censorship"
         webpage_title_dic = dict()
-        with open('/Volumes/Macintosh/Users/crystal/disguiser/materials/domain_webpage/domain_title_dict_2021.txt') as file:
+        with open('') as file:
             for entry in file:
                 entry_dic = json.loads(entry.strip())
                 domain = list(entry_dic.keys())[0]
@@ -49,7 +49,7 @@ with open('/Volumes/Macintosh/Users/crystal/disguiser/code/2022-06-14_http_proxy
 
         title = False
         for domain in data['domain']:
-            data['domain'][domain].pop("3.110.30.127")           
+            data['domain'][domain].pop("")           
             for url in url_list:
                 vp_response = data['domain'][domain][url]['text']
 
