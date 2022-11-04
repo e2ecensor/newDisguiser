@@ -40,7 +40,7 @@ with open('', 'r') as f:
         #             else:
         #                 data['domain'][domain][url] = "detect censorship"
         webpage_title_dic = dict()
-        with open('/Volumes/Macintosh/Users/crystal/disguiser/materials/domain_webpage/domain_title_dict_2021.txt') as file:
+        with open('') as file:
             for entry in file:
                 entry_dic = json.loads(entry.strip())
                 domain = list(entry_dic.keys())[0]
@@ -49,7 +49,7 @@ with open('', 'r') as f:
 
         title = False
         for domain in data['domain']:  
-            # data['domain'][domain].pop("3.110.30.127")         
+                     
             for url in url_list:
                 vp_response = data['domain'][domain][url]['text']
 
