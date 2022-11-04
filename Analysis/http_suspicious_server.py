@@ -5,11 +5,11 @@ from bs4 import BeautifulSoup
 
 
 
-url_list = ["18.133.196.172", "54.197.194.180", "18.228.203.42", "3.26.215.12", "35.245.157.97", "34.151.125.165", "34.105.171.50", "35.247.224.42", "20.115.40.63", "20.5.0.129", "191.234.198.54","20.13.160.33"]
+url_list = ["", "", "", "", "", "", "", "", "", "", "",""]
 correct_http_page = 'http\n'
 
 
-with open('/Volumes/Macintosh/Users/crystal/disguiser/server/2022-10-25_http_proxyrack_censorship_attempt1.json', 'r') as f:
+with open('', 'r') as f:
     line = f.readline()
     country_count = {}
     suspicious_vps = {}
