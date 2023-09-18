@@ -34,7 +34,7 @@ def retrieve_test_list(country_code):
     return domain_list
 
 def get_country_code(ip):
-    url = 'http://ipinfo.io/' + ip + '?token=83423c8f71a017'
+    url = 'http://ipinfo.io/' + ip + ''
 
     try:
         response = requests.get(url)
