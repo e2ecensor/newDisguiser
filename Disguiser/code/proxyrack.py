@@ -45,7 +45,7 @@ def release_exit_node(proxy, timeout = 5):
     return flag
 
 
-
+## The API via https://ip-api.com/json only provide clear-text HTTP version. It's recommanded to obtain subscription key to protect the traffic with HTTPS.
 def get_proxy_info(proxy, timeout = 5):
     url = 'http://ip-api.com/json'
     curl_cmd = get_curl_cmd(proxy, url)
