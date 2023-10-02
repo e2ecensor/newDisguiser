@@ -67,8 +67,8 @@ with open('', 'r') as f:
                                 
                                 data['domain'][domain][url] = "detect censorship - wrong title"
                                 break
-                    except:
-                        data['domain'][domain][url] = "detect censorship - wrong http"
+                        except:
+                            data['domain'][domain][url] = "detect censorship - wrong http"
                         
 
                     
