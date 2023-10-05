@@ -69,7 +69,7 @@ def build_finished_countries_file(finished_countries_file):
 
 
 def get_proxyrack_proxy_info(proxy, finished_countries):
-    test_sequence = []
+    
     release_time = 0
     for _ in range(300):
         
