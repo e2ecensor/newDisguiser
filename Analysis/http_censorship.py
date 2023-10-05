@@ -69,8 +69,8 @@ with open('', 'r') as f:
                                 
                                 data['domain'][domain][url] = "detect censorship"
                                 break
-                        except:
-                            data['domain'][domain][url] = "detect censorship"
+                    except:
+                        data['domain'][domain][url] = "detect censorship"
         if title == True:
             line = f.readline()
             continue
