@@ -56,17 +56,16 @@ with open('', 'r') as f:
                         
                 else:
                     while True:
-                        
-                        try:
-    
-                            vp_title = BeautifulSoup(vp_response, "html.parser").title.string
-                            local_title = webpage_title_dic[domain]
-                            if vp_title == local_title and local_title != '':
-                                data['domain'][domain][url] = "no censorship - correct title"
-                            else:
-                                
-                                data['domain'][domain][url] = "detect censorship - wrong title"
-                                break
+                    try:
+
+                        vp_title = BeautifulSoup(vp_response, "html.parser").title.string
+                        local_title = webpage_title_dic[domain]
+                        if vp_title == local_title and local_title != '':
+                            data['domain'][domain][url] = "no censorship - correct title"
+                        else:
+                            
+                            data['domain'][domain][url] = "detect censorship - wrong title"
+                            break
                     except:
                         data['domain'][domain][url] = "detect censorship - wrong http"
                         
