@@ -146,7 +146,7 @@ def dns_request(domain, server, ttl, timeout = 5):
     except socket.timeout:
         raw_dns_response = ''
         is_timeout = True
-
+	port = sock.getsockname()[1]
         addr = get_router_ip(icmp_sock, port)
         
     except:
