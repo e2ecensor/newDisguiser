@@ -182,12 +182,15 @@ def process_raw_http_response(raw_http_response, is_timeout):
             http_result['status'] = 'fail'
         else:
             source = FakeSocket(raw_http_response)
+	try:
             response = HTTPResponse(source)
             response.begin()
             http_result['text'] = response.read(len(raw_http_response)).decode()
             #http_result['url'] = raw_http_response.url
             http_result['status_code'] = response.status
             http_result['headers'] = dict(response.getheaders())
+	except:
+		http_result['status'] = 'fail'
     else:
         http_result['status'] = 'fail'
 
