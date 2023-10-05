@@ -55,7 +55,6 @@ with open('', 'r') as f:
                     data['domain'][domain][url] = "no censorship - correct http"
                         
                 else:
-                    While True:
                     try:
 
                         vp_title = BeautifulSoup(vp_response, "html.parser").title.string
@@ -65,7 +64,7 @@ with open('', 'r') as f:
                         else:
                             
                             data['domain'][domain][url] = "detect censorship - wrong title"
-                            break
+                        
                     except:
                         data['domain'][domain][url] = "detect censorship - wrong http"
                         
