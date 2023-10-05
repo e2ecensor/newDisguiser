@@ -69,7 +69,7 @@ def build_finished_countries_file(finished_countries_file):
 
 
 def get_proxyrack_proxy_info(proxy, finished_countries):
-    test_sequence = ['dns', 'http', 'sni']
+
     release_time = 0
     for _ in range(300):
         
@@ -77,7 +77,7 @@ def get_proxyrack_proxy_info(proxy, finished_countries):
         proxy_info = proxyrack.get_proxy_info(proxy)
 
         if proxy_info != None:
-            
+            test_sequence = ['dns', 'http', 'sni']
             test_sequence = list(filter(lambda x: finished_countries[x].get(proxy_info['country'], 0) < max_per_country, test_sequence))
             if len(test_sequence) != 0:
                 break
