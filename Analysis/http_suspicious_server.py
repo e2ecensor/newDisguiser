@@ -74,7 +74,7 @@ with open('', 'r') as f:
         if title == True:
             line = f.readline()
             
-        if title == False:
+        if titile == False:
             continue
                         
 
