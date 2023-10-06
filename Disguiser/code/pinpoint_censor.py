@@ -191,8 +191,7 @@ def process_raw_http_response(raw_http_response, is_timeout):
             http_result['headers'] = dict(response.getheaders())
 	except:
 		http_result['status'] = 'fail'
-    else:
-        http_result['status'] = 'fail'
+    
 
     return http_result
 
