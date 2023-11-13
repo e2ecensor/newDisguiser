@@ -44,8 +44,12 @@ def read_domain(file):
         data = []
         for r in f.readlines():
             # skip empty lines
+            Disallowed_chars = ["(", ")", "#", ";"]
             if r == "\n":
                 continue
+            for x in r:
+                if x in Disallowed_chars:
+                    exit()
             r = r.replace("false", "False")
             r = r.replace("true", "True")
             try:
