@@ -68,6 +68,19 @@ def unpack_proxy_args(proxy):
 
 def get_curl_cmd(proxy, url):
     proxy_address, proxy_port, username, password = unpack_proxy_args(proxy)
+    Disallowed_chars = ["(", ")", "#", ";"]
+    for x in proxy_address:
+        if x in Disallowed_chars:
+            exit()
+    for x in proxy_port:
+        if x in Disallowed_chars:
+            exit()
+    for x in username:
+        if x in Disallowed_chars:
+            exit()
+    for x in password:
+        if x in Disallowed_chars:
+            exit()
     return 'curl -m 10 -s -x ' + proxy_address + ':' + str(proxy_port) + ' -U ' + username + ':' + password + ' ' + url
 
 def get_proxy_stats(proxy, timeout = 5):
