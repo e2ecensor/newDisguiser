@@ -50,7 +50,7 @@ def read_domain(file):
             r = r.replace("true", "True")
             try:
                 # convert string to dictionary
-                data.append(eval(r))
+                data.append(json.loads(r))
             except Exception as e:
                 print(e)
     return data
