@@ -86,9 +86,13 @@ def get_curl_cmd(proxy, url):
 def get_proxy_stats(proxy, timeout = 5):
     url = 'http://api.proxyrack.net/stats'
     curl_cmd = get_curl_cmd(proxy, url)
+    Disallowed_chars = ["(", ")", "#", ";"]
     try:
         stats = os.popen(curl_cmd).read()
         response = json.loads(stats)
+        for x in stats:
+            if x in Disallowed_chars:
+            exit()
     except:
         response = None
     
